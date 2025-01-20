@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_notes/constants/routes.dart';
 import 'package:my_notes/views/home_view.dart';
 import 'package:my_notes/views/login_view.dart';
 import 'package:my_notes/views/notes_view.dart';
@@ -13,9 +14,9 @@ void main() {
       theme: ThemeData(primarySwatch: Colors.blue),
       home: HomePage(),
       routes: {
-        '/login/': (context) => const LoginView(),
-        '/register/': (context) => const RegisterView(),
-        '/notes/': (context) => const NotesView(),
+        loginRoute: (context) => const LoginView(),
+        registerRoute: (context) => const RegisterView(),
+        notesRoute: (context) => const NotesView(),
       },
     ),
   );

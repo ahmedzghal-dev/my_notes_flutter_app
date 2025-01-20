@@ -12,6 +12,9 @@ class _VerifyEmailViewState extends State<VerifyEmailView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('email verification'),
+      ),
       body: Column(
         children: [
           Text('please verify email'),
@@ -21,7 +24,7 @@ class _VerifyEmailViewState extends State<VerifyEmailView> {
               await user?.sendEmailVerification();
             },
             child: Text('Send email verification'),
-          )
+          ),
         ],
       ),
     );
